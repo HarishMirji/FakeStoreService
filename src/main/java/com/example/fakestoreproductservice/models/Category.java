@@ -1,4 +1,4 @@
-package com.example.fakestoreproductservice.model;
+package com.example.fakestoreproductservice.models;
 
 import lombok.Data;
 

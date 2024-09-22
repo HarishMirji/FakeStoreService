@@ -1,14 +1,14 @@
-package com.example.fakestoreproductservice.dto;
+package com.example.fakestoreproductservice.dtos;
 
-import com.example.fakestoreproductservice.model.Category;
-import com.example.fakestoreproductservice.model.Product;
+import com.example.fakestoreproductservice.models.Category;
+import com.example.fakestoreproductservice.models.Product;
 import lombok.Data;
 
 @Data
 public class FakeStoreProductDTO {
 
-    private int id;
-    private String name;
+    private long id;
+    private String title;
     private String description;
     private int price;
     private String image;
@@ -17,7 +17,7 @@ public class FakeStoreProductDTO {
     public Product toConvertProduct(){
         Product product = new Product();
         product.setProductId(id);
-        product.setProductName(name);
+        product.setProductName(title);
         product.setProductDescription(description);
         product.setProductPrice(price);
         product.setImageUrl(image);

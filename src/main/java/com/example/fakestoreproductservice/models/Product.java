@@ -1,10 +1,10 @@
-package com.example.fakestoreproductservice.model;
+package com.example.fakestoreproductservice.models;
 
 import lombok.Data;
 
 @Data
 public class Product {
-    private int productId;
+    private long productId;
     private String productName;
     private String productDescription;
     private int productPrice;
